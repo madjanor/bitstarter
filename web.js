@@ -5,7 +5,7 @@ var app = express.createServer(express.logger());
 
 function readIndexData(){
 	var txt="";
-	data= fs.readFileSync('index.txt'); 
+	data= fs.readFileSync('index.html'); 
 	txt=data.toString('utf8');
 	return txt;
 };

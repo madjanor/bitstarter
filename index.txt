@@ -1,1 +1,8 @@
-Hello worl from index file
+<html>
+<head> 
+	<title>Dummy hello file</title>
+</head>
+<body>
+	<h1> Hello world from index.html </h1>
+</body>
+</html>
