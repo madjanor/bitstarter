@@ -3,13 +3,10 @@ var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
- readIndexData = function(){
+function readIndexData(){
 	var txt="";
-	fs.readFile('index.txt', function (err, data) {
-  		if (err) throw err;
-  		//console.log(data);
-		txt=data.toString('utf8');
-	});
+	data= fs.readFileSync('index.txt'); 
+	txt=data.toString('utf8');
 	return txt;
 };
 
